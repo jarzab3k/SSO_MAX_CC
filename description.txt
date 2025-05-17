@@ -500,7 +500,7 @@ function resp_after_prec()
 end
 
 1c 1) 12-14, zrównoważony 2) 15+, 5+!c 3) 18+
-	1d 1) 0-6 2) 7-11, niezrównoważony na młodych 3) 16+ bez starszych czwórek
+	1d 1) 0-6 (7) 2) 8-11, na młodszym lub obu młodszych
 		1h 1)12-14, 3-4!h 2)18+ 4+!h
 		1s 1)12-14, 3-4!s 2)18+ 4+!s
 		:1nt_resp(18-21)
@@ -574,7 +574,7 @@ end
 			1s 1)12-14, 3-4!s 2)18+ 4+!s
 			:1nt_resp(18-21)
 			2c 15+, 5+!c
-	:1h_resp()
+	1h 7+, 4+!h
 		1s 4+!s
 			2c 1)transfer na 2!d 2)dowolny ivit
 				2d automat
@@ -612,7 +612,7 @@ end
 		2s 18+5+!s
 		(x)
 			xx fit 3+!h
-	:1s_resp()
+	1s 7+, 4+!s
 		:1nt_resp(12-14)
 			2c 1)transfer na 2!d 2)dowolny ivit
 				2d automat
@@ -646,7 +646,7 @@ end
 					:amer_after_s_next(GF ustalenie !d)
 		(x)
 			xx fit 3+!s
-	:1nt_resp(7-10)
+	1nt 8-11 bez starszych czwórek
 		2c 15+, 5+!c
 			2d naturalne 5!d332 dół
 			2h obawa o piki dół
@@ -657,11 +657,11 @@ end
 			3h obawa o piki góra
 			3s obawa o kiery góra	
 			3nt około 4333 góra					
-	2c GF 5+!c
+	2c 12+, 5+!c, forsuje do dogranej
 		2d 12-14 skład dowolny
-	2d GF 5+!d
+	2d 12+, 5+!d, forsuje do dogranej
 		2h 12-14 skład dowolny
-	2h 7-9, 5!s4-5!h
+	2h Inwitujące do gry premiowej na bardzo dobrym kolorze
 		pass do gry
 		2s do gry
 		2nt GF, pytanie o skład
@@ -693,7 +693,7 @@ end
 		3nt do gry
 		4c 4+!h0-1!s
 		4d 3+!s0-1!h
-	2s inwit+ transfer na Ba
+	2s Inwitujące do gry premiowej na bardzo dobrym kolorze
 		2nt dół otwarcia 12-14
 		3c 15+ 5+!c
 		3d 18+ 5+!d
@@ -702,14 +702,14 @@ end
 		3nt góra otwarcia 12-14
 		:4c_Gerber()
 		4nt inwit
-	2nt inwit 10-12
-	:3c_resp(9-11)
+	2nt 12+, bez starszych czwórek, forsuje do dogranej
+	3c 9-11 na dobrej szóstce, nieforsujące
 		:3d_fit()
 		:3h_fit()
 		:3s_fit()
 		3nt do gry
 		4c 18+ uzgodnienie !c
-	:3d_resp(9-11)
+	3d 9-11 na dobrej szóstce, nieforsujące
 		:3h_fit()
 		:3s_fit()
 		3nt do gry
@@ -720,6 +720,9 @@ end
 			4nt lepsze niż 5!c  wszystkie figury w młodych
 			5c 2+!c do gry
 		4d 18+ uzgodnienie !d
+	3h 6-11, niezły siedmiokart
+	3s 6-11, niezły siedmiokart
+	3nt nie ma takiej odzywki
 	(1d)
 		x 4-4!h!s
 		:1h_resp()
