@@ -499,7 +499,7 @@ function resp_after_prec()
 	3nt do gry
 end
 
-1c 1) 12-14, zrównoważony 2) 12-14, 4!s4!h1!d4!c 3) 15+, 5+!c 4) 18+
+1c 1) 12-14, zrównoważony 2) 15+, 5+!c 3) 18+
 	1d 1) 0-6 2) 7-11, niezrównoważony na młodych 3) 16+ bez starszych czwórek
 		1h 1)12-14, 3-4!h 2)18+ 4+!h
 		1s 1)12-14, 3-4!s 2)18+ 4+!s
@@ -761,7 +761,7 @@ end
 		:1nt_resp(7-9)
 		2c 7-9 5+c
 		2d 7-9 5+d
-1d 1) 12-17, 5+!d 2) 12-17, trójkolorówka 3) 12-14, 5!c4+!d
+1d 1) 12-17, 5+!d 2) 12-17, trójkolorówka (4441) 3) 12-14, 5!c4+!d
 	:1h_resp()
 		1s 4+!s
 			2c 1)transfer na 2!d 2)dowolny ivit
@@ -844,7 +844,7 @@ end
 	:3c_resp(9-11)
 	(1ba)
 		2c 4+4+!h!s
-1h 1) 12-17, 5+!h 2) 8-11 5+!h5+!c/!d
+1h 1) 12-17, 5+!h
 	:1s_resp()
 		:1nt_resp(12-14)
 			2c 1)transfer na 2!d 2)dowolny ivit
@@ -885,7 +885,7 @@ end
 	4h blokujące
 	(x)
 		:1nt_fit(h)
-1s 1) 12-17, 5+!s 2) 8-11 5+!s5+!c/!d
+1s 1) 12-17, 5+!s
 	1nt 7-11 bez fitu !s
 		:gazilli_1s()
 		2d 1) 12-14, 4+!d 2) 15-17, 4!d 3) 7-11 5+!d
@@ -1226,7 +1226,7 @@ end
 		xx relay, siła co najmniej na inwit
 		2d nieforsujące na !d
 		:resp_after_prec()
-2d 5+4+!h!s 4-11
+2d 6+ na starszym
 	2h do gry
 	2s do gry
 	2nt pytanie o skład
@@ -1272,7 +1272,7 @@ end
 	(x)
 		Pass Propozycja gry naturalne kara
 		XX Pokaż własny kolor
-2h 5-11 6+!h
+2h 6-11 5+!h + inna piątka
 	2s pytanie o singla
 		2ba singiel !s
 		3c singiel !c
@@ -1285,7 +1285,7 @@ end
 		3s trzecia figura !s
 	:3c_fit()
 	:3d_fit()
-2s 5-11 6+!s
+2s 6-11 5+!s + inna piątka
 	2nt pytanie o singla
 		3c singiel !c
 		3d singiel !d
@@ -1294,7 +1294,7 @@ end
 	:3c_fit()
 	:3d_fit()
 	:3h_fit()
-2nt 5-11 5!c-5!d
+2nt 6-11 5!c-5!d
 	3h pytanie o układ
 		3s 2!s
 		3nt 2!h
@@ -1302,137 +1302,25 @@ end
 		4d 6!d
 		4h 3!h
 		4s 3!s
-3c 5-11 blokujące 6+!c
+3c blokujące 6+!c (po parti 7+)
 	:3d_fit()
 	:3h_fit()
 	:3s_fit()
-3d 5-11 blokujące 6+!d
+3d blokujące 6+!d (po parti 7+)
 	:3h_fit()
 	:3s_fit()
-3h 5-11 blokujące 7+!h
-3s 5-11 blokujące 7+!s
-3nt 7+!c/!d AKDWxxx bez dojścia
+3h blokujące 6+!h (po parti 7+)
+3s blokujące 6+!s (po parti 7+)
+3nt 7+!c/!d AKDWxxx bez dojścia - na 1./2. ręce , na 3./4. ręce do gry
 	4c do koloru
 	4d pytanie o singla
 		4h singiel !h
 		4s singiel !s
 		4nt singiel !c/!d
 	5c do koloru
-4c 5-11 blokujące 8+!c
-4d 5-11 blokujące 8+!d
-pass 11-
-	1h 10-17, 5+!h
-		:drury(h)
-		(x)
-			:1nt_fit(h)
-	1s 10-17, 5+!s
-		:drury(s)
-		(x)
-			:1nt_fit(s)
-	:r_blok(2h)
-	:r_blok(2s)
-	:r_blok(3c)
-	:r_blok(3d)
-	(1c)
-		x - kontra bi 5(4)+!c/!d 4+!h/!s lub objaśniająca
-			:db1hs(7)
-		1d wistowe 8-17 5(4)+!d może zawierać 4!h/!s
-		1h wistowe 8-17 5(4)+!h
-			:drury(h)
-			(x)
-				xx 10-11 bez fitu
-				1nt 7-9 bez fitu
-				2h 0-9 3+!h
-				2s 7-11 4+!h karta na 2,5h
-				2nt 9-11 3+!h bilansowe do 3h
-		1s wistowe 8-17 5(4)+!s
-			:drury(s)
-			(x)
-				xx 10-11 bez fitu
-				1nt 7-9 bez fitu
-				2s 0-9 3+!s
-				2nt 9-11 3+!s bilansowe do 3s
-		2c wistowe 10-17 5+!c może zawierać 4!h/!s
-			2d pytanie 
-				2h 4!h
-				2s 4!s
-				2nt 12-14 5!c
-				3c 6!c
-		2d 5+4+!h!s
-	(1d)
-		x - kontra bi 5(4)+!c 4+!h/!s
-			:db1hs(7)
-		1h wistowe 8-17 5(4)+!h
-			:drury(h)
-			(x)
-				xx 10-11 bez fitu
-				1nt 7-9 bez fitu
-				2h 0-9 3+!h
-				2s 7-11 4+!h karta na 2,5h
-				2nt 9-11 3+!h bilansowe do 3h
-		1s wistowe 8-17 5(4)+!s
-			:drury(s)
-			(x)
-				xx 10-11 bez fitu
-				1nt 7-9 bez fitu
-				2s 0-9 3+!s
-				2nt 9-11 3+!s bilansowe do 3s
-		2c wistowe 10-17 5+!c może zawierać 4+!h/!s
-		2d 5+4+!h!s
-	(1h)
-		x - kontra bi 5(4)+!c/!d 4+!s
-			(1s)
-				x 7+4!s propozycja 
-		:1h_wej(14)
-	(1s)
-		x - kontra bi 5(4)+!c/!d 4+!h
-		:1s_wej(14)
+4c blokujące 8+!c (naturalne?)
+4d blokujące 8+!d (naturalne?)
 
-	(1nt)
-		x 5+!c/!d-4!h/!s
-		2c 5+4+!h!s
-		2d 6+!h/!s
-		2h 5+!h 4+!c/!d
-		2s 5+!s 4+!c/!d
-		2nt 5!c-5!d
-	(2c) Precision
-		pass
-			(2d) pytanie
-				x kara
-		x wywoławcza
-			(2d) pytanie
-				x kara lub chcę kontrować karnie
-			({2!d}) naturalne
-				x wywoławcza
-		4c GF 5!h-5!s
-		4d GF 5!d-5!h/!s
-	({2!c}) stare 4+4+!h!s
-		x  trefle lub wywoławcza trefle z karami
-		2d naturalne 12+, 5+!d
-		:obr_na_stare()
-	(2d) 6+!h/!s lub Wilkosz
-		pass nic ciekawego +lub wywołanie do kierów 12+, 4+!s
-		x 12+, 4+!h wywoławcza do pików lub 18+
-		4c GF 5!c-5!h/!s
-		4d GF 5!d-5!h/!s
-	({2!d}) 54!h!s
-		x kara lub wywoławcza trefle z karami
-		:obr_na_stare()
-	(2h) 6+!h lub 5!h-5
-		4c GF 5!c-5!s
-		4d GF 5!d-5!s
-	(2s) 6+!s lub 5!s-5
-		4c GF 5!c-5!h
-		4d GF 5!d-5!h
-	(2nt) 5!c-5!d
-		3c lepsze kiery od pików min.5-4
-		3d lepsze piki od kierów min.5-4
-	(3c) 6+!c
-		4c GF 5!h-5!s
-		4d GF 5!d-5!h/!s
-	(3d) 6+!d
-		4c GF 5!c-5!h/!s
-		4d GF 5!h-5!s
 {dwustronna przed pasem partnera}
 	(1c)
 		p 11-
